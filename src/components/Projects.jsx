@@ -1,9 +1,9 @@
 import React from 'react'
 import ProjectItems from './ProjectItems'
-import Recipe from "/Users/misax/Pictures/Projects/RecipeApp.png"
-import Todo from "/Users/misax/Pictures/Projects/TodoApp.png"
-import Password from "/Users/misax/Pictures/Projects/Password.png"
-import Movie from "/Users/misax/Pictures/Projects/MovieApp.png"
+import Recipe from "../images/RecipeApp.png"
+import Todo from "../images/TodoApp.png"
+import Password from "../images/Password.png"
+import Movie from "../images/MovieApp.png"
 const Projects = () => {
   return (
     <div id="projects" className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
