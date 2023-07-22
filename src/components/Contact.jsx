@@ -2,33 +2,23 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div id='contact' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
-        <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>Contact</h1>
-        <form action="https://getform.io/f/27d37037-5898-4105-b860-fa8d1ddb2302" method='POST' encType='multipart/form-data'>
-            <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-                <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>Name</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300 outline-[#001b5e]' type="text" name='name'/>
+    <div id='contact' className='max-w-[1040px] m-auto md:pl-20 min-h-[550px]'>
+        <div className='min-w-[150px] h-[100%] p-5 flex flex-col justify-between'>
+            <div className='flex flex-col'>
+                <h1 className='py-4 text-sm font-bold text-[#2a9d8f]'>Get in Touch</h1>
+                <p className='text-2xl md:text-4xl text-[#2a9d8f]'>Do you think i am a good candidate for your company? Contact Me!</p>
+            </div>
+            <div className='text-[#2a9d8f] flex flex-col gap-2 w-full p-1 md:p-10'>
+                <div className='flex flex-col sm:flex-row gap-2'>
+                    <span className='hover:bg-white hover:text-[#1b1b1b] ease-in duration-200 cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center'>misaxanli@gmail.com</span>
+                    <span className='hover:bg-white hover:text-[#1b1b1b] ease-in duration-200 cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center'>+994557615069</span>
                 </div>
-                <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>Phone</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300 outline-[#001b5e]' type="text" name='phone'/>
+                <div className='flex flex-col gap-2'>
+                    <a href='https://www.linkedin.com/in/metin-isakhanli-217374266/' target='_blank' className='hover:bg-blue-500 hover:text-white ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] rounded-full'>linkedin</a>
+                    <a href='https://github.com/MetinIsakhanli' target='_blank' className='hover:bg-gray-700 hover:text-gray-300 ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] rounded-full '>github</a>
                 </div>
             </div>
-            <div className='flex flex-col py-2'>
-                <label className='uppercase text-sm py-2'>Email</label>
-                <input className='border-2 rounded-lg p-3 flex border-gray-300 outline-[#001b5e]' type="email" name='email' />
-            </div>
-            <div className='flex flex-col py-2'>
-                <label className='uppercase text-sm py-2'>Subject</label>
-                <input className='border-2 rounded-lg p-3 border-gray-300 outline-[#001b5e]' type="text" name='subject' />
-            </div>
-            <div className='flex flex-col py-2'>
-                <label className='uppercase text-sm py-2'>Message</label>
-                <textarea className='border-2 rounded-lg p-3 border-gray-300 outline-[#001b5e]' rows='10' name='message'/>
-            </div>
-            <button className='bg-[#001b5e] text-gray-100 mt-4 w-full p-4 rounded-lg'>Send Message</button>
-        </form>
+        </div>
     </div>
   )
 }
