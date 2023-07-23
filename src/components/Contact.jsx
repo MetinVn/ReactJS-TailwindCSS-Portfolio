@@ -2,8 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div id='contact' className='max-w-[1040px] m-auto md:pl-20 min-h-[550px]'>
-        <div className='min-w-[150px] h-[100%] p-5 flex flex-col justify-between'>
+    <div id='contact' className='max-w-[1040px] m-auto md:pl-20 px-4 py-16'>
+        <div className='min-w-[150px] flex flex-col justify-between'>
             <div className='flex flex-col'>
                 <h1 className='py-4 text-sm font-bold text-[#2a9d8f]'>Get in Touch</h1>
                 <p className='text-2xl md:text-4xl text-[#2a9d8f]'>Do you think i am a good candidate for your company? Contact Me!</p>
