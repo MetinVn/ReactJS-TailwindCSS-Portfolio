@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div id="contact" className="max-w-[1040px] m-auto md:pl-20 px-4 py-16">
       <div className="min-w-[150px] flex flex-col justify-between">
-        <div className="flex flex-col">
+        <div className="flex flex-col  rounded-xl cursor-default">
           <h1 className="py-4 text-sm font-bold text-[#2a9d8f]">
             Get in Touch
           </h1>
@@ -15,10 +15,10 @@ const Contact = () => {
         </div>
         <div className="text-[#2a9d8f] flex flex-col gap-2 w-full p-1 md:p-10">
           <div className="flex flex-col sm:flex-row gap-2">
-            <span className="hover:bg-white hover:text-[#1b1b1b] ease-in duration-200 cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center">
+            <span className="hover:bg-white hover:text-[#1b1b1b] hover:shadow-lg ease-in duration-200 rounded-md cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center shadow-sm">
               misaxanli@gmail.com
             </span>
-            <span className="hover:bg-white hover:text-[#1b1b1b] ease-in duration-200 cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center">
+            <span className="hover:bg-white hover:text-[#1b1b1b] hover:shadow-lg ease-in duration-200 rounded-md cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center shadow-sm">
               +994557615069
             </span>
           </div>
@@ -26,21 +26,21 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/metin-isakhanli-217374266/"
               target="_blank"
-              className="hover:bg-blue-500 hover:text-white ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] rounded-full"
+              className="hover:bg-blue-500 hover:text-white shadow-lg ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] rounded-full"
             >
               linkedin
             </a>
             <a
-              href="https://github.com/MetinIsakhanli"
+              href="https://github.com/MetinVn"
               target="_blank"
-              className="hover:bg-gray-700 hover:text-gray-300 ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] rounded-full "
+              className="hover:bg-gray-700 hover:text-gray-300 shadow-lg ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] rounded-full "
             >
               github
             </a>
           </div>
         </div>
       </div>
-      <div className="m-auto bg-gray-800 w-full p-3 rounded-sm">
+      <div className="m-auto bg-gray-800 w-full p-3 rounded-sm shadow-xl">
         <h6 className="flex flex-row justify-center items-center text-[16px] sm:text-lg text-white">
           Website created with :
           <a href="https://react.dev" target="_blank">
