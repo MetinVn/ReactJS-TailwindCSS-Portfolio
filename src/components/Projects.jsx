@@ -13,7 +13,7 @@ import react from "../images/react.png";
 import Javascript from "../images/javascript.png";
 
 import { BsFillCloudArrowDownFill } from "react-icons/bs";
-import Pdf from "../images/Metin-Isakhanli.pdf";
+import Pdf from "../images/Resume-Metin-Isakhanli.pdf";
 const Projects = () => {
   return (
     <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 ">
