@@ -41,7 +41,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="m-auto bg-gray-800 w-full p-3 rounded-sm">
-        <h6 className="flex flex-row justify-center items-center text-white">
+        <h6 className="flex flex-row justify-center items-center text-[16px] sm:text-lg text-white">
           Website created with :
           <a href="https://react.dev" target="_blank">
             <img className="h-8 mx-1 sm:mx-3" src={ReactSVG} size={20} />
