@@ -38,7 +38,7 @@ const Contact = () => {
             <a
               href="https://github.com/MetinVn"
               target="_blank"
-              className="bg-gray-700 flex flex-row items-center justify-start text-gray-300 hover:bg-transparent hover:text-gray-700 md:max-w-[420px] shadow-md ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] border-gray-700 rounded-sm hover:shadow-gray-700 group"
+              className="bg-gray-700 flex flex-row items-center justify-start text-gray-300 hover:bg-transparent hover:text-gray-400 md:max-w-[420px] shadow-md ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] border-gray-700 rounded-sm hover:shadow-gray-700 group"
             >
               <img
                 src={Right}
