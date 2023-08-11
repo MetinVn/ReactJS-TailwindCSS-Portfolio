@@ -4,43 +4,43 @@ import ReactSVG from "../images/react.svg";
 const Contact = () => {
   return (
     <div id="contact" className="max-w-[1040px] m-auto md:pl-20 px-4 py-16">
-      <div className="min-w-[150px] flex flex-col justify-between">
+      <div className="min-w-[150px] p-10 flex flex-col justify-between border-2 rounded-lg border-green-400 mb-10 shadow-lg shadow-green-400">
         <div className="flex flex-col  rounded-xl cursor-default">
-          <h1 className="py-4 text-sm font-bold text-[#2a9d8f]">
+          <h1 className="py-4 text-sm font-bold text-green-400">
             Get in Touch
           </h1>
-          <p className="text-2xl md:text-4xl text-[#2a9d8f]">
+          <p className="text-2xl md:text-4xl text-green-400">
             Do you think i am a good candidate for your company? Contact Me!
           </p>
         </div>
-        <div className="text-[#2a9d8f] flex flex-col gap-2 w-full p-1 md:p-10">
+        <div className="text-green-400 flex flex-col gap-2 w-full p-1 md:p-10 items-center max-w-[1000px]">
           <div className="flex flex-col sm:flex-row gap-2">
-            <span className="hover:bg-white hover:text-[#1b1b1b] hover:shadow-lg ease-in duration-200 rounded-md cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center shadow-sm">
+            <span className="hover:bg-white hover:shadow-lg ease-in duration-200 rounded-md cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center shadow-sm">
               misaxanli@gmail.com
             </span>
-            <span className="hover:bg-white hover:text-[#1b1b1b] hover:shadow-lg ease-in duration-200 rounded-md cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center shadow-sm">
+            <span className="hover:bg-white hover:shadow-lg ease-in duration-200 rounded-md cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center shadow-sm">
               +994557615069
             </span>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 w-full">
             <a
               href="https://www.linkedin.com/in/metin-isakhanli-217374266/"
               target="_blank"
-              className="hover:bg-blue-500 hover:text-white shadow-lg ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] rounded-full"
+              className="bg-blue-500 text-white hover:bg-blue-300 hover:text-blue-500 w-full md:max-w-[420px] shadow-md ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto text-center border-[1px] border-blue-500 rounded-full hover:shadow-blue-300 "
             >
               linkedin
             </a>
             <a
               href="https://github.com/MetinVn"
               target="_blank"
-              className="hover:bg-gray-700 hover:text-gray-300 shadow-lg ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] rounded-full "
+              className="bg-gray-700 text-gray-300 hover:bg-gray-500 hover:text-gray-700 md:max-w-[420px] shadow-md ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] border-gray-700 rounded-full hover:shadow-gray-500"
             >
               github
             </a>
           </div>
         </div>
       </div>
-      <div className="m-auto bg-gray-800 w-full p-3 rounded-sm shadow-xl">
+      <div className="m-auto bg-gray-800 w-full p-3 rounded-sm shadow-lg shadow-gray-500">
         <h6 className="flex flex-row justify-center items-center text-[16px] sm:text-lg text-white">
           Website created with :
           <a href="https://react.dev" target="_blank">
