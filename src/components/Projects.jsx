@@ -16,7 +16,7 @@ import Pdf from "../images/Resume-Metin-Isakhanli.pdf";
 const Projects = () => {
   return (
     <>
-      <div className="absolute w-full h-16 bg-gradient-to-b from-gray-900 to-white"></div>
+      <div className="absolute w-full h-16 bg-gradient-to-b from-purple-900 to-white"></div>
       <div id="projects" className="w-full">
         <div className="max-w-[1040px]  m-auto md:pl-20 p-4 py-16">
           <a
