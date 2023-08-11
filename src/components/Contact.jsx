@@ -1,10 +1,11 @@
 import React from "react";
 import Tailwind from "../images/tailwind-css.svg";
 import ReactSVG from "../images/react.svg";
+import Right from "../images/right.svg";
 const Contact = () => {
   return (
     <div id="contact" className="max-w-[1040px] m-auto md:pl-20 px-4 py-16">
-      <div className="min-w-[150px] p-10 flex flex-col justify-between border-2 rounded-lg border-green-400 mb-10 shadow-lg shadow-green-400">
+      <div className="min-w-[150px] p-10 flex flex-col justify-between border-2 rounded-lg bg-gray-800 border-green-400 mb-10 shadow-lg shadow-green-400">
         <div className="flex flex-col  rounded-xl cursor-default">
           <h1 className="py-4 text-sm font-bold text-green-400">
             Get in Touch
@@ -26,22 +27,30 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/metin-isakhanli-217374266/"
               target="_blank"
-              className="bg-blue-500 text-white hover:bg-blue-300 hover:text-blue-500 w-full md:max-w-[420px] shadow-md ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto text-center border-[1px] border-blue-500 rounded-full hover:shadow-blue-300 "
+              className="bg-blue-500 flex flex-row items-center justify-start text-white hover:bg-transparent hover:text-blue-500 w-full md:max-w-[420px] shadow-md ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto text-center border-[1px] border-blue-500 rounded-sm hover:shadow-blue-300 group"
             >
+              <img
+                src={Right}
+                className="h-5 -translate-x-1 group-hover:translate-x-0 duration-200"
+              />
               linkedin
             </a>
             <a
               href="https://github.com/MetinVn"
               target="_blank"
-              className="bg-gray-700 text-gray-300 hover:bg-gray-500 hover:text-gray-700 md:max-w-[420px] shadow-md ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] border-gray-700 rounded-full hover:shadow-gray-500"
+              className="bg-gray-700 flex flex-row items-center justify-start text-gray-300 hover:bg-transparent hover:text-gray-700 md:max-w-[420px] shadow-md ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] border-gray-700 rounded-sm hover:shadow-gray-700 group"
             >
+              <img
+                src={Right}
+                className="h-5 -translate-x-1 group-hover:translate-x-0 duration-200"
+              />
               github
             </a>
           </div>
         </div>
       </div>
-      <div className="m-auto bg-gray-800 w-full p-3 rounded-sm shadow-lg shadow-gray-500">
-        <h6 className="flex flex-row justify-center items-center text-[16px] sm:text-lg text-white">
+      <div className="m-auto bg-gray-800 w-full p-3 rounded-sm shadow-lg shadow-green-500">
+        <h6 className="flex flex-row justify-center items-center text-[16px] sm:text-lg text-green-400">
           Website created with :
           <a href="https://react.dev" target="_blank">
             <img className="h-8 mx-1 sm:mx-3" src={ReactSVG} size={20} />
