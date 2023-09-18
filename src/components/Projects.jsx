@@ -66,12 +66,12 @@ const Projects = () => {
             <ProjectItems
               img={Converter}
               title="Converter"
-              link={"https://github.com/MetinVn/User-Atuh-Firebase-ReactJS"}
+              link={"https://github.com/MetinVn/YotuTube-Convert2MP3"}
             />
             <ProjectItems
               img={Translator}
               title="Translator"
-              link={"https://github.com/MetinVn/User-Atuh-Firebase-ReactJS"}
+              link={"https://github.com/MetinVn/Translator"}
             />
           </div>
           <p className="text-xl font-bold text-center text-[#001b5e] mt-8 py-8">
