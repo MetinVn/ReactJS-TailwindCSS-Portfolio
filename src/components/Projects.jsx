@@ -2,8 +2,10 @@ import React from "react";
 import ProjectItems from "./ProjectItems";
 import Skills from "./Skills";
 import Recipe from "../images/RecipeApp.png";
-import Todo from "../images/TodoApp.png";
+import Translator from "../images/Translator.png";
+import Converter from "../images/YoutubeMP3Convert.png";
 import Auth from "../images/Auth.png";
+import Todo from "../images/TodoApp.png";
 import Movie from "../images/MovieApp.png";
 import Html from "../images/html5.png";
 import Css from "../images/css3.png";
@@ -23,10 +25,12 @@ const Projects = () => {
             id="skills"
             href={Pdf}
             download="Metin_Isakhanli_Resume"
-            className="w-[50%] mb-3 flex justify-center items-center rounded-full shadow-lg shadow-gray-400 text-black bg-gray-100 m-auto min-w-[150px] p-4 cursor-pointer hover:bg-gray-800 hover:scale-105 hover:text-white ease-in duration-200"
+            className="w-[50%] mb-3 flex justify-center items-center rounded-full shadow-lg shadow-gray-400 text-black bg-gray-100 m-auto min-w-[150px] p-1 sm:p-4 cursor-pointer hover:bg-gray-800 hover:scale-105 hover:text-white ease-in duration-200"
           >
             <div className="flex flex-col items-center text-center">
-              <span>Download Resume</span>
+              <span className="text-sm sm:text-lg whitespace-break-spaces">
+                Download Resume
+              </span>
               <BsFillCloudArrowDownFill size={20} />
             </div>
           </a>
@@ -43,6 +47,11 @@ const Projects = () => {
               link={"https://github.com/MetinIsakhanli/Recipe-App"}
             />
             <ProjectItems
+              img={Movie}
+              title="Movie App"
+              link={"https://github.com/MetinIsakhanli/Movie-App"}
+            />
+            <ProjectItems
               img={Todo}
               title="Todo App"
               link={
@@ -55,9 +64,14 @@ const Projects = () => {
               link={"https://github.com/MetinVn/User-Atuh-Firebase-ReactJS"}
             />
             <ProjectItems
-              img={Movie}
-              title="Movie App"
-              link={"https://github.com/MetinIsakhanli/Movie-App"}
+              img={Converter}
+              title="Converter"
+              link={"https://github.com/MetinVn/User-Atuh-Firebase-ReactJS"}
+            />
+            <ProjectItems
+              img={Translator}
+              title="Translator"
+              link={"https://github.com/MetinVn/User-Atuh-Firebase-ReactJS"}
             />
           </div>
           <p className="text-xl font-bold text-center text-[#001b5e] mt-8 py-8">
