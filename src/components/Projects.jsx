@@ -14,7 +14,7 @@ import Tailwind from "../images/tailwind.png";
 import react from "../images/react.png";
 import Javascript from "../images/javascript.png";
 import { BsFillCloudArrowDownFill } from "react-icons/bs";
-import Pdf from "../images/Resume.pdf";
+import Pdf from "../images/MyResume.pdf";
 const Projects = () => {
   return (
     <>
