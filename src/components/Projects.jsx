@@ -1,15 +1,15 @@
 import React from "react";
 import ProjectItems from "./ProjectItems";
 import Skills from "./Skills";
-import Recipe from "../images/RecipeApp.png";
+import Recipe from "../images/Recipe.png";
 import Translator from "../images/Translator.png";
 import Converter from "../images/YoutubeMP3Convert.png";
-import Auth from "../images/Auth.png";
-import Todo from "../images/TodoApp.png";
+import Rock from "../images/RockPS.png";
+import Quiz from "../images/Quiz.png";
 import Movie from "../images/MovieApp.png";
 import Html from "../images/html5.png";
 import Css from "../images/css3.png";
-import Firebase from "../images/firebase.png";
+import Nodejs from "../images/node-js.svg";
 import Tailwind from "../images/tailwind.png";
 import react from "../images/react.png";
 import Javascript from "../images/javascript.png";
@@ -44,34 +44,34 @@ const Projects = () => {
             <ProjectItems
               img={Recipe}
               title="Recipe App"
-              link={"https://github.com/MetinIsakhanli/Recipe-App"}
+              link={"https://metinvn.github.io/Recipe-App/recipe.html"}
             />
             <ProjectItems
               img={Movie}
               title="Movie App"
-              link={"https://github.com/MetinIsakhanli/Movie-App"}
+              link={"https://metinvn.github.io/Movie-App/"}
             />
             <ProjectItems
-              img={Todo}
-              title="Todo App"
+              img={Quiz}
+              title="Quiz"
+              link={"https://metinvn.github.io/Quiz/"}
+            />
+            <ProjectItems
+              img={Rock}
+              title="R.P.S Game"
               link={
-                "https://github.com/MetinIsakhanli/TodoApp-Firebase-ReactJS"
+                "https://metinvn.github.io/Rock-Paper-Scissor-Game/RockPaperScissor.html"
               }
             />
             <ProjectItems
-              img={Auth}
-              title="Authentication"
-              link={"https://github.com/MetinVn/User-Atuh-Firebase-ReactJS"}
-            />
-            <ProjectItems
               img={Converter}
-              title="Converter"
-              link={"https://github.com/MetinVn/YotuTube-Convert2MP3"}
+              title="MP3 Converter"
+              link={"https://metinvn.github.io/YotuTube-Convert2MP3/"}
             />
             <ProjectItems
               img={Translator}
               title="Translator"
-              link={"https://github.com/MetinVn/Translator"}
+              link={"https://metinvn.github.io/Translator/"}
             />
           </div>
           <p className="text-xl font-bold text-center text-[#001b5e] mt-8 py-8">
@@ -84,7 +84,7 @@ const Projects = () => {
             <Skills img={Javascript} skill={"JavaScript"} />
             <Skills img={react} skill={"ReactJS"} />
             <Skills img={Tailwind} skill={"Tailwind"} />
-            <Skills img={Firebase} skill={"Firebase"} />
+            <Skills img={Nodejs} skill={"NodeJS"} />
           </div>
         </div>
       </div>
