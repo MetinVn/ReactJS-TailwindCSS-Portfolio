@@ -13,7 +13,7 @@ import Nodejs from "../images/node-js.svg";
 import Tailwind from "../images/tailwind.png";
 import react from "../images/react.png";
 import Javascript from "../images/javascript.png";
-import { BsFillCloudArrowDownFill } from "react-icons/bs";
+import { BsFillCloudArrowDownFill ,BsArrowUpRightCircle} from "react-icons/bs";
 import Pdf from "../images/MyResume.pdf";
 const Projects = () => {
   return (
@@ -73,6 +73,9 @@ const Projects = () => {
               title="Translator"
               link={"https://metinvn.github.io/Translator/"}
             />
+          </div>
+          <div className="w-full flex justify-center mt-12">
+              <a href="https://github.com/MetinVn?tab=repositories" target="_blank" className="w-full min-w-[130px] max-w-[350px] text-center justify-around flex-wrap rounded-xl bg-slate-800 text-slate-400 hover:shadow-inner hover:shadow-black flex flex-row py-4 px-3 md:py-10 md:px-5 duration-200">See my other projects on Github <BsArrowUpRightCircle size={20}/></a>
           </div>
           <p className="text-xl font-bold text-center text-[#001b5e] mt-8 py-8">
             Skills i used to create these websites:
