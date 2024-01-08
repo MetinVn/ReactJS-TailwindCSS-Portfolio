@@ -5,7 +5,7 @@ import Recipe from "../images/Recipe.png";
 import Translator from "../images/Translator.png";
 import Converter from "../images/YoutubeMP3Convert.png";
 import Rock from "../images/RockPS.png";
-import US from "../images/Project-US.PNG";
+import US from "../images/Project-US.png";
 import Movie from "../images/MovieApp.png";
 import Html from "../images/html5.png";
 import Css from "../images/css3.png";
