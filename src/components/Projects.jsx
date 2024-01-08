@@ -5,7 +5,7 @@ import Recipe from "../images/Recipe.png";
 import Translator from "../images/Translator.png";
 import Converter from "../images/YoutubeMP3Convert.png";
 import Rock from "../images/RockPS.png";
-import Quiz from "../images/Quiz.png";
+import US from "../images/Project-US.png";
 import Movie from "../images/MovieApp.png";
 import Html from "../images/html5.png";
 import Css from "../images/css3.png";
@@ -18,17 +18,17 @@ import Pdf from "../images/MyResume.pdf";
 const Projects = () => {
   return (
     <>
-      <div className="absolute w-full h-16 bg-gradient-to-b from-black/80 to-white"></div>
+      <div className="absolute w-full h-2 bg-gradient-to-b from-black/30 to-white"></div>
       <div className="w-full">
         <div className="max-w-[1040px]  m-auto md:pl-20 p-4 py-16">
           <a
             id="skills"
             href={Pdf}
             download="Metin_Isakhanli_Resume"
-            className="w-[50%] mb-3 flex justify-center items-center rounded-full shadow-lg shadow-gray-400 text-black bg-gray-100 m-auto min-w-[150px] p-1 sm:p-4 cursor-pointer hover:bg-gray-800 hover:scale-105 hover:text-white ease-in duration-200"
+            className="w-[40%] mb-3 flex justify-center items-center rounded-full shadow-lg shadow-gray-400 text-black bg-[#bbdbfe] m-auto p-1 sm:py-4 cursor-pointer hover:bg-[#baebff] ease-in-out duration-200"
           >
             <div className="flex flex-col items-center text-center">
-              <span className="text-sm sm:text-lg whitespace-break-spaces">
+              <span className="text-black text-sm sm:text-lg whitespace-break-spaces">
                 Download Resume
               </span>
               <BsFillCloudArrowDownFill size={20} />
@@ -52,9 +52,9 @@ const Projects = () => {
               link={"https://metinvn.github.io/Movie-App/"}
             />
             <ProjectItems
-              img={Quiz}
-              title="Quiz"
-              link={"https://metinvn.github.io/Quiz/"}
+              img={US}
+              title="Statistics"
+              link={"https://metinvn.github.io/Bireysel-Silahlanma/"}
             />
             <ProjectItems
               img={Rock}
@@ -82,12 +82,12 @@ const Projects = () => {
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 ">
-            <Skills img={Html} skill={"Html"} />
-            <Skills img={Css} skill={"Css"} />
-            <Skills img={Javascript} skill={"JavaScript"} />
-            <Skills img={react} skill={"ReactJS"} />
-            <Skills img={Tailwind} skill={"Tailwind"} />
-            <Skills img={Nodejs} skill={"NodeJS"} />
+            <Skills img={Html} skill={"Html"} color={'text-[#ff3e00]'}/>
+            <Skills img={Css} skill={"Css"} color={'text-[#39a0ed]'}/>
+            <Skills img={Javascript} skill={"JavaScript"} color={'text-[#f7e018]'}/>
+            <Skills img={react} skill={"ReactJS"} color={'text-[#48cae4]'}/>
+            <Skills img={Tailwind} skill={"Tailwind"} color={'text-[#219ebc]'}/>
+            <Skills img={Nodejs} skill={"NodeJS"} color={'text-[#72b01d]'}/>
           </div>
         </div>
       </div>
