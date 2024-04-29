@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- *{
-    scroll-behavior: smooth;
+
+::-moz-selection { 
+    color: #00cc66;
+    background: #4b0082;
+  }
+  
+  ::selection {
+    color: #00cc66;
+    background: #4b0082;
 }

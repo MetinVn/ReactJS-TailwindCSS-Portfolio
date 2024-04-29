@@ -1,22 +1,42 @@
 import React from "react";
-
-const ProjectItems = ({ img, title, link }) => {
+const ProjectItems = ({
+  img,
+  title,
+  linkProject,
+  linkSource,
+  description,
+  techStack,
+}) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 hover:scale-105 duration-500 rounded-xl group hover:bg-gradient-to-r from-gray-200 to-[#bbdbfe]">
-      <img
-        src={img}
-        alt={title}
-        className="rounded-xl group-hover:opacity-10 ease-in-out duration-300"
-      />
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="text-md md:text-2xl font-bold text-black text-center mb-[10px]">
-          {title}
+    <div className="bg-white overflow-hidden border rounded-lg border-transparent hover:border-[#008080]">
+      <img src={img} alt={title} className="w-full h-auto" />
+      <div className="p-4">
+        <p className="text-xl font-semibold mb-2 text-[#9966CC]">{title}</p>
+        <h1 className="text-[15px] leading-tight font-semibold mb-2 text-[#9966CC]">
+          Technologies/Skills Used : {techStack}
+        </h1>
+        <h3 className="text-gray-700 mb-4 text-xs sm:text-sm">
+          <span className="font-semibold text-xs text-[#9966CC]">
+            Description:{" "}
+          </span>
+          {description}
         </h3>
-        <a href={link} target="_blank">
-          <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-sm hover:bg-white/50 hover:text-white ease-in-out duration-200">
-            More Info
-          </p>
-        </a>
+        <div className="flex gap-1">
+          <a
+            href={linkProject || undefined}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-xs sm:text-base px-2 py-1 md:px-4 md:py-2 bg-[#9966CC] text-white hover:bg-[#008080] transition duration-300 ease-in-out rounded ">
+            View Project
+          </a>
+          <a
+            href={linkSource}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-xs sm:text-base px-2 py-1 md:px-4 md:py-2 border border-[#9966CC] rounded hover:border-[#008080] transition duration-300 ease-in-out">
+            {"Source Code </>"}
+          </a>
+        </div>
       </div>
     </div>
   );

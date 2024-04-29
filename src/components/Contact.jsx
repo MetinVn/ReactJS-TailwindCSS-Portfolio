@@ -1,70 +1,54 @@
-import React from "react";
-import Tailwind from "../images/tailwind-css.svg";
-import ReactSVG from "../images/react.svg";
-import Right from "../images/right.svg";
+import pdf from "../images/Matin-Isakhanli.pdf";
 const Contact = () => {
   return (
     <>
-      <div className="max-w-[1040px] m-auto md:pl-20 px-4 my-20">
-        <div className="min-w-[150px] p-10 flex flex-col justify-between border-2 rounded-lg bg-gray-800 border-green-400 mb-10 shadow-lg shadow-green-400">
-          <div className="flex flex-col  rounded-xl cursor-default">
-            <h1 className="py-4 text-sm font-bold text-[#bbdbfe]">
-              Get in touch
-            </h1>
-            <p className="text-xl md:text-2xl text-[#bbdbfe]">
-              Do you think i am a good candidate for your company? Contact me!
+      <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <h3 class="text-lg font-bold mb-4">Contact Me</h3>
+              <p>Email: misaxanli@gmail.com</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold mb-4">Follow Me</h3>
+              <div class="flex space-x-1">
+                <a
+                  href="www.linkedin.com/in/metin-isakhanli-217374266"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-gray-300 hover:text-white transition duration-300">
+                  <i class="fab fa-linkedin">Linkedin</i>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold mb-4">I AM</h3>
+              <p>
+                Seeking opportunities to contribute skills and expertise,
+                committed to excellence in every project. Thank you for
+                considering me as a valuable asset to your team!
+              </p>
+            </div>
+          </div>
+          <div class="mt-6">
+            <h3 class="text-lg font-bold mb-2">Download CV</h3>
+            <p class="mb-4">
+              If you're interested in learning more about my qualifications and
+              experience, feel free to download my CV below:
             </p>
+            <a
+              href={pdf}
+              download
+              class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+              Download CV
+            </a>
           </div>
-          <div className="text-[#bbdbfe] flex flex-col gap-2 w-full p-1 md:p-10 items-center max-w-[1000px]">
-            <div className="flex flex-col sm:flex-row gap-2">
-              <span className="border border-transparent hover:border-green-400  ease-in duration-200 rounded-md cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center">
-                misaxanli@gmail.com
-              </span>
-              <span className="border border-transparent hover:border-green-400  ease-in duration-200 rounded-md cursor-pointer  text-sm md:text-lg p-2 mx-auto w-full text-center">
-                +994557615069
-              </span>
-            </div>
-            <div className="flex flex-col gap-2 w-full">
-              <a
-                href="https://www.linkedin.com/in/metin-isakhanli-217374266/"
-                target="_blank"
-                className="bg-blue-500 flex flex-row items-center justify-start text-[#bbdbfe] hover:bg-transparent hover:text-blue-500 w-full md:max-w-[420px] ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto text-center border-[1px] border-blue-500 rounded-sm  group"
-              >
-                <img
-                  src={Right}
-                  className="h-5 -translate-x-1 group-hover:translate-x-0 duration-200"
-                />
-                linkedin
-              </a>
-              <a
-                href="https://github.com/MetinVn"
-                target="_blank"
-                className="bg-gray-700 flex flex-row items-center justify-start text-[#bbdbfe] hover:bg-transparent hover:text-gray-400 md:max-w-[420px] ease-in duration-200 cursor-pointer text-sm md:text-lg p-2 mx-auto w-full text-center border-[1px] border-gray-700 rounded-sm  group"
-              >
-                <img
-                  src={Right}
-                  className="h-5 -translate-x-1 group-hover:translate-x-0 duration-200"
-                />
-                github
-              </a>
-            </div>
-          </div>
+          <hr class="border-t border-gray-700 my-6" />
+          <p class="text-center text-sm">
+            &copy; 2024 Matin Isakhanli. All rights reserved.
+          </p>
         </div>
-      </div>
-      <div
-        id="contact"
-        className="max-w-[1040px] md:pl-20 m-auto px-4 my-20 "
-      >
-        <h6 className="min-w-[150px] text-xs sm:text-sm md:text-lg items-center p-6 flex flex-row justify-center text-[#bbdbfe] border-2 rounded-lg bg-gray-800 border-green-400 mb-10 shadow-lg shadow-green-400">
-          Website created with :
-          <a href="https://react.dev" target="_blank">
-            <img className="h-8 mx-1 sm:mx-3" src={ReactSVG} size={20} />
-          </a>
-          <a href="https://tailwindcss.com" target="_blank">
-            <img className="h-8" src={Tailwind} size={20} />
-          </a>
-        </h6>
-      </div>
+      </footer>
     </>
   );
 };
