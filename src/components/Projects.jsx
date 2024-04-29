@@ -4,7 +4,8 @@ import ProjectItems from "./ProjectItems";
 import Recipe from "../images/Recipe.png";
 import Movie from "../images/MovieApp.png";
 import Translator from "../images/Translator.png";
-import Product from "../images/ProductManage.png";
+// import FF from "../images/food.png";
+// import Product from "../images/ProductManage.png";
 import USA from "../images/us.png";
 import Summary from "./Summary";
 
@@ -14,7 +15,7 @@ const Projects = () => {
       title: "Project Management",
       description:
         "The Product Management app offers a robust set of functionalities, including pagination, user registration and login capabilities for secure access. Users can: filter products by category names,add product to database, search product with debounce optimized functionality.",
-      img: Product,
+      img: Translator,
       linkSource: "https://github.com/MetinVn/Product-Management",
       techStack:
         "React, Semantic UI, Formik, Yup, Redux, PostgreSQL, Java, Swagger, Spring Boot",
