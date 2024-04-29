@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import ProjectItems from "./ProjectItems";
 import Recipe from "../images/Recipe.png";
