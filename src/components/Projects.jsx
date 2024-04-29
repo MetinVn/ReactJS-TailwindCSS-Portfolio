@@ -4,7 +4,7 @@ import ProjectItems from "./ProjectItems";
 import Recipe from "../images/Recipe.png";
 import Movie from "../images/MovieApp.png";
 import Translator from "../images/Translator.png";
-import FF from "../images/Food.png";
+import FF from "../images/food.png";
 import Product from "../images/ProductManage.png";
 import USA from "../images/us.png";
 import Summary from "./Summary";
