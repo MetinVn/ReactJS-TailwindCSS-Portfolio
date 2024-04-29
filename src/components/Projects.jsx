@@ -4,7 +4,6 @@ import ProjectItems from "./ProjectItems";
 import Recipe from "../images/Recipe.png";
 import Movie from "../images/MovieApp.png";
 import Translator from "../images/Translator.png";
-import FF from "../images/food.png";
 import Product from "../images/ProductManage.png";
 import USA from "../images/us.png";
 import Summary from "./Summary";
@@ -42,7 +41,7 @@ const Projects = () => {
       title: "E-Commerce",
       description:
         "My demo version of e-commerce website for popular food in Turkey called Orcik. Users can order the food through filling the form and after that, they can track their cargo details with the help of RapidApi call and the key we send them.",
-      img: FF,
+      img: Translator,
       linkProject: "https://metinvn.github.io/Orcik-Website/",
       linkSource: "https://github.com/MetinVn/Orcik-Website",
       techStack: "React, TailwindCSS, Framer-Motion",
