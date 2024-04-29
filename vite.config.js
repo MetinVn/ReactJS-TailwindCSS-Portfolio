@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), reactRefresh()],
   resolve: {
     alias: {
-      "/@/": `${path.resolve(__dirname, "src")}/`,
+      "/@/": `${path.resolve(new URL(import.meta.url).pathname, "../../src")}/`,
     },
   },
 });
