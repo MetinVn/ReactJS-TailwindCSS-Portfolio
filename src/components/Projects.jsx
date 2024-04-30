@@ -8,7 +8,6 @@ import Food from "../images/food.png";
 import Product from "../images/productManage.png";
 import USA from "../images/us.png";
 import Summary from "./Summary";
-
 const Projects = () => {
   const projects = [
     {
