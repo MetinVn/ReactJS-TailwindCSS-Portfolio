@@ -54,8 +54,8 @@ const Summary = () => {
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
         transition={{ delay: 0.6, duration: 0.5 }}
         className="text-sm sm:text-lg md:text-xl mb-4">
-        I also excel in backend development, utilizing frameworks like Spring
-        Boot and NodeJS to build robust and scalable applications.
+        I also excel in backend development, utilizing frameworks and libraries
+        like Spring Boot and NodeJS to build robust and scalable applications.
       </motion.p>
       <motion.p
         initial={{ opacity: 0, y: 20 }}
