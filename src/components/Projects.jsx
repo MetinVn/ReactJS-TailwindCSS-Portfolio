@@ -11,7 +11,7 @@ import Summary from "./Summary";
 const Projects = () => {
   const projects = [
     {
-      title: "Project Management",
+      title: "Product Management",
       description:
         "The Product Management app offers a robust set of functionalities, including pagination, user registration and login capabilities for secure access. Users can: filter products by category names,add product to database, search product with debounce optimized functionality.",
       img: Product,
