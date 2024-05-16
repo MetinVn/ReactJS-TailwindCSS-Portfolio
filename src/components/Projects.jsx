@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import ProjectItems from "./ProjectItems";
 import Recipe from "../images/Recipe.png";
 import Movie from "../images/MovieApp.png";
-import Weather from "../images/Capture.jpg";
+import Weather from "../images/Capture.png";
 import Translator from "../images/Translator.jpeg";
 import Food from "../images/food.png";
 import Product from "../images/productManage.png";
