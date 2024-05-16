@@ -38,6 +38,6 @@ Welcome to my portfolio website! This project showcases my work, skills, and pas
 
 Feel free to reach out if you have any questions or want to connect!
 
-- LinkedIn: [Metin Isakhanli](https://www.linkedin.com/in/yourprofile)
+- LinkedIn: [Metin Isakhanli](https://www.linkedin.com/in/metin-isakhanli-217374266/)
 
 Thank you for visiting my portfolio website!
