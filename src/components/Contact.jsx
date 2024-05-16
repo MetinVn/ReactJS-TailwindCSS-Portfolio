@@ -1,4 +1,4 @@
-import pdf from "../images/Matin-Isakhanli.pdf";
+import pdf from "../images/Metin-Isakhanli.pdf";
 const Contact = () => {
   return (
     <>
