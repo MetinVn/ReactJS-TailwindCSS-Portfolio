@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ProjectItems from "./ProjectItems";
 import Recipe from "../images/Recipe.png";
 import Movie from "../images/MovieApp.png";
+import Weather from "../images/Capture.jpg";
 import Translator from "../images/Translator.jpeg";
 import Food from "../images/food.png";
 import Product from "../images/productManage.png";
@@ -20,6 +21,15 @@ const Projects = () => {
         "React, Semantic UI, Formik, Yup, Redux, PostgreSQL, Java, Swagger, Spring Boot",
     },
     {
+      title: "Weather App",
+      description:
+        "Real-Time Weather Data: Fetches real-time weather information for various locations. Search Functionality: Allows users to search for weather information by city name.",
+      img: Weather,
+      linkProject: "https://metinvn.github.io/Weather/",
+      linkSource: "https://github.com/MetinVn/Weather",
+      techStack: "React, Tailwind CSS, Framer Motion, Debounce",
+    },
+    {
       title: "Individual Armament",
       description:
         "Individual armament project retrieves USA crime rates across all states. It includes an interactive map of the USA, allowing users to click on states and access specific crime data. The project leverages RapidAPI for data retrieval, also integrates React Charts for data visualization, and utilizes Framer Motion for smooth and interactive animations.",
@@ -29,15 +39,6 @@ const Projects = () => {
       techStack: "React, React charts, Framer-Motion, TailwindCSS, Axios",
     },
     {
-      title: "Movie App",
-      description:
-        "App utilizes RapidAPI to fetch data and dynamically visualizes movie charts based on user search input. Users can explore movie details including ,release date ,original language and overview.",
-      img: Movie,
-      linkProject: "https://metinvn.github.io/Movie-App/",
-      linkSource: "https://github.com/MetinVn/Movie-App",
-      techStack: "HTML, CSS, JavaScript",
-    },
-    {
       title: "E-Commerce",
       description:
         "My demo version of e-commerce website for popular food in Turkey called Orcik. Users can order the food through filling the form and after that, they can track their cargo details with the help of RapidApi call and the key we send them.",
@@ -45,6 +46,15 @@ const Projects = () => {
       linkProject: "https://metinvn.github.io/Orcik-Website/",
       linkSource: "https://github.com/MetinVn/Orcik-Website",
       techStack: "React, TailwindCSS, Framer-Motion",
+    },
+    {
+      title: "Movie App",
+      description:
+        "App utilizes RapidAPI to fetch data and dynamically visualizes movie charts based on user search input. Users can explore movie details including ,release date ,original language and overview.",
+      img: Movie,
+      linkProject: "https://metinvn.github.io/Movie-App/",
+      linkSource: "https://github.com/MetinVn/Movie-App",
+      techStack: "HTML, CSS, JavaScript",
     },
     {
       title: "Translator",
