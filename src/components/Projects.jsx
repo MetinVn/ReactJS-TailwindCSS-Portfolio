@@ -1,14 +1,21 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import ProjectItems from "./ProjectItems";
+import Summary from "./Summary";
 import Recipe from "../images/Recipe.png";
 import Movie from "../images/MovieApp.png";
 import Weather from "../images/Capture.png";
 import Translator from "../images/Translator.jpeg";
 import Food from "../images/food.png";
 import Product from "../images/productManage.png";
-import USA from "../images/us.png";
-import Summary from "./Summary";
+import USA from "../images/us.jpg";
+import blurRecipe from "../images/reduced/RecipeApp.jpg";
+import blurMovie from "../images/reduced/MovieApp.jpg";
+import blurWeather from "../images/reduced/Capture.jpg";
+import blurTranslator from "../images/reduced/Translator.jpg";
+import blurFood from "../images/reduced/food.jpg";
+import blurProduct from "../images/reduced/productManage.jpg";
+import blurUSA from "../images/reduced/us.jpg";
 const Projects = () => {
   const projects = [
     {
@@ -16,6 +23,7 @@ const Projects = () => {
       description:
         "The Product Management app offers a robust set of functionalities, including pagination, user registration and login capabilities for secure access. Users can: filter products by category names,add product to database, search product with debounce optimized functionality.",
       img: Product,
+      blurImg: blurProduct,
       linkSource: "https://github.com/MetinVn/Product-Management",
       techStack:
         "React, Semantic UI, Formik, Yup, Redux, PostgreSQL, Java, Swagger, Spring Boot",
@@ -25,6 +33,7 @@ const Projects = () => {
       description:
         "Real-Time Weather Data: Fetches real-time weather information for various locations. Search Functionality: Allows users to search for weather information by city name.",
       img: Weather,
+      blurImg: blurWeather,
       linkProject: "https://metinvn.github.io/Weather/",
       linkSource: "https://github.com/MetinVn/Weather",
       techStack: "React, Tailwind CSS, Framer Motion, Debounce",
@@ -32,8 +41,9 @@ const Projects = () => {
     {
       title: "Individual Armament",
       description:
-        "Individual armament project retrieves USA crime rates across all states. It includes an interactive map of the USA, allowing users to click on states and access specific crime data. The project leverages RapidAPI for data retrieval, also integrates React Charts for data visualization, and utilizes Framer Motion for smooth and interactive animations.",
+        "Individual armament project retrieves USA crime rates across all states. It includes an interactive map of the USA, allowing users to click on states and access specific crime data. The project leverages GeoJson for data retrieval, also integrates React Charts for data visualization, and utilizes Framer Motion for smooth and interactive animations.",
       img: USA,
+      blurImg: blurUSA,
       linkProject: "https://metinvn.github.io/Bireysel-Silahlanma/",
       linkSource: "https://github.com/MetinVn/Bireysel-Silahlanma",
       techStack: "React, React charts, Framer-Motion, TailwindCSS, Axios",
@@ -43,6 +53,7 @@ const Projects = () => {
       description:
         "My demo version of e-commerce website for popular food in Turkey called Orcik. Users can order the food through filling the form and after that, they can track their cargo details with the help of RapidApi call and the key we send them.",
       img: Food,
+      blurImg: blurFood,
       linkProject: "https://metinvn.github.io/Orcik-Website/",
       linkSource: "https://github.com/MetinVn/Orcik-Website",
       techStack: "React, TailwindCSS, Framer-Motion",
@@ -52,6 +63,7 @@ const Projects = () => {
       description:
         "App utilizes RapidAPI to fetch data and dynamically visualizes movie charts based on user search input. Users can explore movie details including ,release date ,original language and overview.",
       img: Movie,
+      blurImg: blurMovie,
       linkProject: "https://metinvn.github.io/Movie-App/",
       linkSource: "https://github.com/MetinVn/Movie-App",
       techStack: "HTML, CSS, JavaScript",
@@ -61,6 +73,7 @@ const Projects = () => {
       description:
         "Lifesaver translation app. It makes switching between Russian, German, Spanish, Turkish, Italian, and Azerbaijani a breeze, helping users communicate effectively and explore new languages with ease.",
       img: Translator,
+      blurImg: blurTranslator,
       linkProject: "https://metinvn.github.io/Translator/",
       linkSource: "https://github.com/MetinVn/Translator",
       techStack: "React, React spinners, TailwindCSS, Axios",
@@ -70,6 +83,7 @@ const Projects = () => {
       description:
         "Recipe app utilizes meal api that retrieves meal ingredients, instructions and measures.Users can also save meals to favorites for later.",
       img: Recipe,
+      blurImg: blurRecipe,
       linkProject: "https://metinvn.github.io/Recipe-App/recipe.html",
       linkSource: "https://github.com/MetinVn/Recipe-App",
       techStack: "HTML, CSS, JavaScript",
@@ -128,7 +142,7 @@ const Projects = () => {
                       ? { opacity: 1, y: 0, transition: { duration: 1 } }
                       : {}
                   }
-                  ref={(node) => (itemsRef.current[index] = node)}
+                  ref={(ref) => (itemsRef.current[index] = ref)}
                   data-index={index}>
                   <ProjectItems {...project} />
                 </motion.div>

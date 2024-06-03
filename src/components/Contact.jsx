@@ -15,6 +15,7 @@ const Contact = () => {
                 <a
                   href="https://www.linkedin.com/in/metin-isakhanli-217374266"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-gray-300 hover:text-white transition duration-300">
                   <i className="fab fa-linkedin">Linkedin</i>
                 </a>
@@ -32,8 +33,8 @@ const Contact = () => {
           <div className="mt-6">
             <h3 className="text-lg font-bold mb-2">Download CV</h3>
             <p className="mb-4">
-              If you're interested in learning more about my qualifications and
-              experience, feel free to download my CV below:
+              {`If you're interested in learning more about my qualifications and
+              experience, feel free to download my CV below:`}
             </p>
             <a
               href={pdf}
