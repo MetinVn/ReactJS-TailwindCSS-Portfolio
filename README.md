@@ -17,8 +17,8 @@ Welcome to my portfolio website! This project showcases my work, skills, and pas
   - Tailwind CSS
   - Framer Motion (for animations)
 - **Backend:**
-  - Spring Boot (Java)
-  - REST APIs
+  - Java
+  - C++
 - **State Management:**
   - Redux
 - **Deployment:**
