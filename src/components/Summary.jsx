@@ -42,7 +42,7 @@ const Summary = () => {
             <span
               onMouseLeave={() => setTooltip(false)}
               className="absolute tracking-tighter md:tracking-normal whitespace-nowrap text-xs sm:text-sm md:text-lg -top-2 -translate-x-1/2 border bg-white rounded-full border-[#9966CC] text-[#9966CC] p-2 z-10 duration-300">
-              {`I'm currently 22 y.o`}
+              {`I'm currently 23 y.o`}
             </span>
           )}
         </span>
