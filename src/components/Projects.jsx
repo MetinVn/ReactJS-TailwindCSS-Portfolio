@@ -155,7 +155,7 @@ const Projects = () => {
           <Summary />
           <div className="container mx-auto py-8">
             <h1 className="text-3xl font-bold text-center mb-8 text-[#9966CC]">
-              Portfolio
+              Projects
             </h1>
             <div className="grid grid-cols-1 gap-5 rounded-xl">
               {projects.map((project, index) => (
