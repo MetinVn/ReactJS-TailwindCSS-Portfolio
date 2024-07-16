@@ -3,14 +3,21 @@ import { motion } from "framer-motion";
 import ProjectItems from "./ProjectItems";
 import blurRecipe from "../images/reduced/RecipeApp.jpg";
 import blurRecipeDark from "../images/reduced/Recipe.jpg";
-import RecipeDark from "../images/Recipe.png";
-import Recipe from "../images/RecipeApp.png";
 import blurMovie from "../images/reduced/MovieApp.jpg";
 import blurWeather from "../images/reduced/Capture.jpg";
 import blurTranslator from "../images/reduced/Translator.jpg";
 import blurFood from "../images/reduced/food.jpg";
 import blurProduct from "../images/reduced/productManage.jpg";
 import blurUSA from "../images/reduced/us.jpg";
+import blurAuthorsPage from "../images/reduced/AuthorsPage.jpg";
+import blurAuthorsPageDark from "../images/reduced/AuthorsPageDark.jpg";
+import blurBooksPage from "../images/reduced/BooksPage.jpg";
+import blurBooksPageDark from "../images/reduced/BooksPageDark.jpg";
+import blurAddProduct from "../images/reduced/AddProduct.jpg";
+import blurCartView from "../images/reduced/CartView.jpg";
+import blurLogin from "../images/reduced/Login.jpg";
+import RecipeDark from "../images/Recipe.png";
+import Recipe from "../images/RecipeApp.png";
 import Movie from "../images/MovieApp.png";
 import Weather from "../images/Capture.png";
 import Translator from "../images/Translator.jpeg";
@@ -18,14 +25,13 @@ import Food from "../images/food.png";
 import Product from "../images/productManage.png";
 import USA from "../images/us.jpg";
 import Summary from "./Summary";
-import blurAuthorsPage from "../images/reduced/AuthorsPage.jpg";
-import blurAuthorsPageDark from "../images/reduced/AuthorsPageDark.jpg";
-import blurBooksPage from "../images/reduced/BooksPage.jpg";
-import blurBooksPageDark from "../images/reduced/BooksPageDark.jpg";
 import AuthorsPage from "../images/AuthorsPage.jpg";
 import AuthorsPageDark from "../images/AuthorsPageDark.jpg";
 import BooksPage from "../images/BooksPage.jpg";
 import BooksPageDark from "../images/BooksPageDark.jpg";
+import AddProduct from "../images/AddProduct.jpg";
+import CartView from "../images/CartView.jpg";
+import Login from "../images/Login.jpg";
 const Projects = () => {
   const projects = [
     {
@@ -47,8 +53,8 @@ const Projects = () => {
       title: "Product Management",
       description:
         "The Product Management app offers a robust set of functionalities, including pagination, user registration and login capabilities for secure access. Users can: filter products by category names,add product to database, search product with debounce optimized functionality.",
-      img: [Product],
-      blurImg: [blurProduct],
+      img: [Product, AddProduct, CartView, Login],
+      blurImg: [blurProduct, blurAddProduct, blurCartView, blurLogin],
       linkSource: "https://github.com/MetinVn/Product-Management",
       techStack:
         "React, Semantic UI, Formik, Yup, Redux, PostgreSQL, Java, Swagger, Spring Boot",
