@@ -1,51 +1,17 @@
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import hero from "../images/hero.png";
-import heroBlur from "../images/reduced/hero.jpg";
+
+import HeroImage from "./HeroImage";
+import LoadingIndicator from "./LoadingIndicator";
 
 const Main = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <div>
-      <img
-        className={`w-full h-screen object-cover object-center ${
-          imageLoaded ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-500`}
-        src={heroBlur}
-        alt="Image"
-        style={{ filter: "blur(20px)" }}
-      />
-      <img
-        className={`w-full h-screen object-cover object-center absolute top-0 left-0 ${
-          imageLoaded ? "opacity-100" : "opacity-0"
-        } transition-opacity duration-500`}
-        src={hero}
-        alt="Image"
-        onLoad={() => setImageLoaded(true)}
-        style={{ filter: "blur(0px)" }}
-      />
-      {!imageLoaded && (
-        <div className="flex items-center justify-center h-screen">
-          <div className="flex items-center justify-center">
-            <svg
-              className="animate-pulse h-12 w-12 text-black mr-2"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-            <p className="text-black">Loading...</p>
-          </div>
-        </div>
-      )}
+      <HeroImage imageLoaded={imageLoaded} setImageLoaded={setImageLoaded} />
+      {!imageLoaded && <LoadingIndicator />}
       {imageLoaded && (
         <div className="w-full h-screen absolute top-0 left-0 text-white">
           <div className="max-w-[1400px] m-auto h-full w-full flex flex-col justify-center items-center lg:items-start">

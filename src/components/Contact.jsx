@@ -1,26 +1,15 @@
-import pdf from "../images/Metin-İsahanli.pdf";
+import ContactInfo from "./ContactInfo";
+import SocialLinks from "./SocialLinks";
+import DownloadCV from "./DownloadCV";
+
 const Contact = () => {
   return (
     <>
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
-              <h3 className="text-lg font-bold mb-4">Contact Me</h3>
-              <p>Email: misaxanli@gmail.com</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-4">Follow Me</h3>
-              <div className="flex space-x-1">
-                <a
-                  href="https://www.linkedin.com/in/metin-isakhanli-217374266"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-300 hover:text-white transition duration-300">
-                  <i className="fab fa-linkedin">Linkedin</i>
-                </a>
-              </div>
-            </div>
+            <ContactInfo />
+            <SocialLinks />
             <div>
               <h3 className="text-lg font-bold mb-4">I AM</h3>
               <p>
@@ -30,39 +19,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="mt-6">
-            <h3 className="text-lg font-bold mb-2">Download CV</h3>
-            <p className="mb-4">
-              {`If you're interested in learning more about my qualifications and
-    experience, feel free to download my CV below:`}
-            </p>
-            <div className="flex justify-between items-center">
-              <a
-                href={pdf}
-                download
-                className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
-                Download CV
-              </a>
-              <a
-                href="https://dashboard.simpleanalytics.com/?utm_source=metinvn.github.io&utm_content=badge"
-                referrerPolicy="origin"
-                target="_blank"
-                className="ml-4">
-                <picture>
-                  <source
-                    srcSet="https://simpleanalyticsbadges.com/metinvn.github.io?mode=dark"
-                    media="(prefers-color-scheme: dark)"
-                  />
-                  <img
-                    src="https://simpleanalyticsbadges.com/metinvn.github.io?mode=light"
-                    loading="lazy"
-                    referrerPolicy="no-referrer"
-                    crossOrigin="anonymous"
-                  />
-                </picture>
-              </a>
-            </div>
-          </div>
+          <DownloadCV />
 
           <hr className="border-t border-gray-700 my-6" />
           <p className="text-center text-sm">
