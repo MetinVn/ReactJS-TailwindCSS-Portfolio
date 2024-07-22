@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import { HiHome, HiBriefcase, HiMail } from "react-icons/hi";
+import useInView from "../hook/useInView";
 
 // Component for individual navigation links
 const NavLink = React.forwardRef(
@@ -46,9 +47,25 @@ const NavMenu = () => {
     return () => window.removeEventListener("resize", updatePosition);
   }, [selected]);
 
+  const isHomeInView = useInView("home");
+  const isContactInView = useInView("contact");
+  const isProjectsInView = useInView("projects");
+
+  useEffect(() => {
+    if (isHomeInView) {
+      setSelected("home");
+    }
+    if (isContactInView) {
+      setSelected("contact");
+    }
+    if (isProjectsInView) {
+      setSelected("projects");
+    }
+  }, [isHomeInView, isContactInView, isProjectsInView]);
+
   return (
-    <div className="fixed right-5 top-1/2 transform -translate-y-1/2 border shadow-md rounded-full p-3 z-50">
-      <nav className="flex flex-col gap-4 relative">
+    <div className="fixed right-5 top-1/2 transform -translate-y-1/2 border shadow-md rounded-full p-3 z-50 backdrop-blur-sm">
+      <nav className="flex flex-col gap-4 relative ">
         <div
           className="absolute bg-gray-300 rounded-full transition-all duration-500 ease-in-out"
           style={{
