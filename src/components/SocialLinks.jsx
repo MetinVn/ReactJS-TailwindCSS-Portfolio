@@ -6,7 +6,7 @@ const SocialLinks = () => (
         href="https://www.linkedin.com/in/metin-isakhanli-217374266"
         target="_blank"
         rel="noreferrer"
-        className="text-gray-300 hover:text-white transition duration-300">
+        className="text-gray-300 hover:text-white transition duration-300 hover:underline">
         <i className="fab fa-linkedin">Linkedin</i>
       </a>
     </div>

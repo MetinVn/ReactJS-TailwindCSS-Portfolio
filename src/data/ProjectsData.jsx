@@ -31,9 +31,10 @@ import Login from "../images/Login.jpg";
 
 export const projects = [
   {
+    year: 2024,
     title: "Open Library Project",
     description:
-      "I built this project using React.js, integrating Open Library APIs for searching books and authors. It features Material UI components for design and TailwindCSS for additional styling. Data storage in IndexDB optimizes performance by minimizing API requests. I enhanced user interaction with features like Abort Controller for managing and canceling API requests. Plus, I implemented sorting algorithms for sorting author and book titles.",
+      "I built this project using React.js, integrated Open Library APIs for searching books and authors. It features Material UI components for design and TailwindCSS for additional styling. Data storage in IndexDB optimizes performance by minimizing API requests. I enhanced user interaction with features like Abort Controller for managing and canceling API requests. Plus, I implemented sorting algorithms for sorting author and book titles.",
     img: [AuthorsPage, AuthorsPageDark, BooksPage, BooksPageDark],
     blurImg: [
       blurAuthorsPage,
@@ -46,6 +47,7 @@ export const projects = [
     techStack: "React, MUI Material, TailwindCSS, React Hooks",
   },
   {
+    year: 2023,
     title: "Product Management",
     description:
       "The Product Management app offers a robust set of functionalities, including pagination, user registration and login capabilities for secure access. Users can: filter products by category names,add product to database, search product with debounce optimized functionality.",
@@ -56,6 +58,7 @@ export const projects = [
       "React, Semantic UI, Formik, Yup, Redux, PostgreSQL, Java, Swagger, Spring Boot",
   },
   {
+    year: 2024,
     title: "Weather App",
     description:
       "Real-Time Weather Data: Fetches real-time weather information for various locations. Search Functionality: Allows users to search for weather information by city name.",
@@ -66,6 +69,7 @@ export const projects = [
     techStack: "React, Tailwind CSS, Framer Motion, Debounce",
   },
   {
+    year: 2023,
     title: "Individual Armament",
     description:
       "Individual armament project retrieves USA crime rates across all states. It includes an interactive map of the USA, allowing users to click on states and access specific crime data. The project leverages GeoJson for data retrieval, also integrates React Charts for data visualization, and utilizes Framer Motion for smooth and interactive animations.",
@@ -76,6 +80,7 @@ export const projects = [
     techStack: "React, React charts, Framer-Motion, TailwindCSS, Axios",
   },
   {
+    year: 2022,
     title: "E-Commerce",
     description:
       "My demo version of e-commerce website for popular food in Turkey called Orcik. Users can order the food through filling the form and after that, they can track their cargo details with the help of RapidApi call and the key we send them.",
@@ -86,6 +91,7 @@ export const projects = [
     techStack: "React, TailwindCSS, Framer-Motion",
   },
   {
+    year: 2021,
     title: "Movie App",
     description:
       "App utilizes RapidAPI to fetch data and dynamically visualizes movie charts based on user search input. Users can explore movie details including ,release date ,original language and overview.",
@@ -96,6 +102,7 @@ export const projects = [
     techStack: "HTML, CSS, JavaScript",
   },
   {
+    year: 2023,
     title: "Translator",
     description:
       "Lifesaver translation app. It makes switching between Russian, German, Spanish, Turkish, Italian, and Azerbaijani a breeze, helping users communicate effectively and explore new languages with ease.",
@@ -106,6 +113,7 @@ export const projects = [
     techStack: "React, React spinners, TailwindCSS, Axios",
   },
   {
+    year: 2021,
     title: "Recipe App",
     description:
       "Recipe app utilizes meal api that retrieves meal ingredients, instructions and measures.Users can also save meals to favorites for later.",

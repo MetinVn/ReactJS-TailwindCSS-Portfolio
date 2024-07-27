@@ -1,6 +1,6 @@
 ---
-title: "Portoflio"
-description: "A Portoflio App built using React and Vite, providing a user-friendly interface."
+title: "Portfolio"
+description: "A Portfolio App built using React and Vite, providing a user-friendly interface."
 ---
 
 # My Portfolio Website
@@ -41,3 +41,11 @@ Feel free to reach out if you have any questions or want to connect!
 - LinkedIn: [Metin Isakhanli](https://www.linkedin.com/in/metin-isakhanli-217374266/)
 
 Thank you for visiting my portfolio website!
+
+---
+
+**Credits:**
+
+- The flames animation and spaceship image used in this project are provided by the following sources:
+  - Flames animation images are available under the Creative Commons BY License: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+  - By MillionthVector: [http://millionthvector.blogspot.de](http://millionthvector.blogspot.de)

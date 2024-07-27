@@ -17,6 +17,7 @@ const DownloadCV = () => (
       <a
         href="https://dashboard.simpleanalytics.com/?utm_source=metinvn.github.io&utm_content=badge"
         referrerPolicy="origin"
+        rel="noreferrer"
         target="_blank"
         className="ml-4">
         <picture>

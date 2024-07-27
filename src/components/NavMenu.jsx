@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
-import { HiHome, HiBriefcase, HiMail } from "react-icons/hi";
+import { HiHome, HiBriefcase, HiMail, HiDocumentText } from "react-icons/hi";
 import useInView from "../hook/useInView";
 
-// Component for individual navigation links
 const NavLink = React.forwardRef(
   ({ to, smooth, duration, offset, onClick, children }, ref) => (
     <div ref={ref} className="relative">
@@ -50,6 +49,7 @@ const NavMenu = () => {
   const isHomeInView = useInView("home");
   const isContactInView = useInView("contact");
   const isProjectsInView = useInView("projects");
+  const isSummaryInView = useInView("summary");
 
   useEffect(() => {
     if (isHomeInView) {
@@ -61,13 +61,16 @@ const NavMenu = () => {
     if (isProjectsInView) {
       setSelected("projects");
     }
-  }, [isHomeInView, isContactInView, isProjectsInView]);
+    if (isSummaryInView) {
+      setSelected("summary");
+    }
+  }, [isHomeInView, isContactInView, isProjectsInView, isSummaryInView]);
 
   return (
-    <div className="fixed right-5 top-1/2 transform -translate-y-1/2 border shadow-md rounded-full p-3 z-50 backdrop-blur-sm">
-      <nav className="flex flex-col gap-4 relative ">
+    <div className="fixed top-10 left-[50%] transform -translate-x-1/2 sm:top-[20%] sm:left-5 md:left-10 md:top-1/2 sm:transform sm:-translate-y-1/3 md:-translate-y-1/2 z-50 ">
+      <nav className="flex flex-row sm:flex-col gap-1 sm:gap-4 relative">
         <div
-          className="absolute bg-gray-300 rounded-full transition-all duration-500 ease-in-out"
+          className="absolute  border-b border-l-0 border-b-blue-600 sm:border-b-0 sm:border-l border-l-blue-600 transition-all duration-500 ease-in-out"
           style={{
             top: style.top || "0",
             left: style.left || "0",
@@ -78,27 +81,38 @@ const NavMenu = () => {
         <NavLink
           to="home"
           smooth
-          duration={500}
+          duration={600}
           onClick={() => setSelected("home")}
-          ref={(el) => (refs.current.home = el)}>
-          <HiHome className="text-xl" />
+          ref={(el) => (refs.current.home = el)}
+          className="text-sm sm:text-xl">
+          <HiHome className="hover:opacity-50" color="white" />
+        </NavLink>
+        <NavLink
+          to="summary"
+          smooth
+          duration={600}
+          onClick={() => setSelected("summary")}
+          ref={(el) => (refs.current.summary = el)}
+          className="text-sm sm:text-xl">
+          <HiDocumentText className="hover:opacity-50" color="white" />
         </NavLink>
         <NavLink
           to="projects"
           smooth
-          duration={500}
-          offset={450}
+          duration={600}
           onClick={() => setSelected("projects")}
-          ref={(el) => (refs.current.projects = el)}>
-          <HiBriefcase className="text-xl" />
+          ref={(el) => (refs.current.projects = el)}
+          className="text-sm sm:text-xl">
+          <HiBriefcase className="hover:opacity-50" color="white" />
         </NavLink>
         <NavLink
           to="contact"
           smooth
-          duration={500}
+          duration={600}
           onClick={() => setSelected("contact")}
-          ref={(el) => (refs.current.contact = el)}>
-          <HiMail className="text-xl" />
+          ref={(el) => (refs.current.contact = el)}
+          className="text-sm sm:text-xl">
+          <HiMail className="hover:opacity-50" color="white" />
         </NavLink>
       </nav>
     </div>

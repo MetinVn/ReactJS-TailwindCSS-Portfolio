@@ -12,7 +12,7 @@ const ImageLoader = ({
         key={`blur-${index}`}
         src={blurImage}
         alt={title}
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute w-full h-full object-cover"
         style={{
           filter: "blur(10px)",
           opacity: currentIndex === index && !imageLoaded[index] ? 1 : 0,
@@ -25,7 +25,7 @@ const ImageLoader = ({
         key={`img-${index}`}
         src={image}
         alt={title}
-        className="absolute top-0 left-0 w-full h-full object-contain"
+        className="absolute w-full h-full object-contain"
         style={{
           opacity: currentIndex === index && imageLoaded[index] ? 1 : 0,
           transition: "opacity 0.5s ease-in-out",

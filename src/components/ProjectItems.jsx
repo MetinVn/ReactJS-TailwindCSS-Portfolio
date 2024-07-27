@@ -13,6 +13,7 @@ const ProjectItems = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(Array(img.length).fill(false));
+  const [showMore, setShowMore] = useState(false);
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) =>
@@ -34,26 +35,30 @@ const ProjectItems = ({
     });
   };
 
-  return (
-    <div className="bg-white overflow-hidden border rounded-lg border-transparent hover:border-[#008080] relative">
-      <ImageLoader
-        blurImg={blurImg}
-        title={title}
-        handleImageLoad={handleImageLoad}
-        currentIndex={currentIndex}
-        imageLoaded={imageLoaded}
-        img={img}
-      />
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
 
-      <div className="p-4 flex flex-col items-start">
-        <h3 className="text-xl font-bold mb-2 text-[#9966CC]">{title}</h3>
-        <p className="text-gray-700 mb-4">{description}</p>
-        <p className="text-sm  mb-4 text-[#008080]">{techStack}</p>
-        <div className="flex items-center space-x-4 mt-4 md:mt-0">
+  const CHARACTER_LIMIT = 150;
+
+  return (
+    <div className="flex flex-col w-full md:flex-row bg-black rounded-lg p-3">
+      <div className="w-full mb-4 md:mb-0">
+        <div className="relative w-full">
+          <ImageLoader
+            blurImg={blurImg}
+            title={title}
+            handleImageLoad={handleImageLoad}
+            currentIndex={currentIndex}
+            imageLoaded={imageLoaded}
+            img={img}
+          />
+        </div>
+        <div className="flex flex-col space-y-4 mt-4">
           {linkProject && (
             <a
               href={linkProject}
-              className=" inline-block text-xs sm:text-base px-2 py-1 md:px-4 md:py-2 bg-[#9966CC] text-white hover:bg-[#008080] transition duration-300 ease-in-out rounded"
+              className="text-sm w-full px-4 py-2 border border-white text-white hover:opacity-60 transition duration-200 ease-in-out rounded"
               target="_blank"
               rel="noopener noreferrer">
               Live Project
@@ -62,7 +67,7 @@ const ProjectItems = ({
           {linkSource && (
             <a
               href={linkSource}
-              className="inline-block text-xs sm:text-base px-2 py-1 md:px-4 md:py-2 border border-[#9966CC] rounded hover:border-[#008080] transition duration-300 ease-in-out"
+              className="text-sm w-full px-4 py-2 bg-white text-black hover:opacity-60 transition duration-300 ease-in-out rounded"
               target="_blank"
               rel="noopener noreferrer">
               Source Code
@@ -75,6 +80,22 @@ const ProjectItems = ({
             />
           )}
         </div>
+      </div>
+      <div className="w-full md:w-2/3 lg:w-2/3 md:pl-6">
+        <h3 className="text-2xl font-semibold mb-2 text-blue-400">{title}</h3>
+        <p className="text-gray-300 mb-4">
+          {showMore
+            ? description
+            : `${description.substring(0, CHARACTER_LIMIT)}...`}
+          {description.length > CHARACTER_LIMIT && (
+            <button
+              onClick={toggleShowMore}
+              className="text-blue-400 ml-2 hover:underline">
+              {showMore ? "Read Less" : "Read More"}
+            </button>
+          )}
+        </p>
+        <p className="text-sm mb-4 text-yellow-400">{techStack}</p>
       </div>
     </div>
   );
