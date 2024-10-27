@@ -1,62 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import {
-  FaLaptopCode,
-  FaTools,
-  FaCode,
-  FaMobileAlt,
-  FaCloud,
-} from "react-icons/fa";
+import { FaLaptopCode, FaTools, FaCode } from "react-icons/fa";
 
 const services = [
   {
     icon: <FaCode />,
-    title: "Web Development",
-    description:
-      "Building responsive and performant web applications using modern technologies.",
+    title: "Frontend Development",
+    description: "Building responsive and interactive web applications with modern frontend technologies.",
   },
   {
-    icon: <FaMobileAlt />,
-    title: "Mobile App Development",
-    description:
-      "Creating intuitive and powerful mobile applications for both Android and iOS platforms.",
-  },
-  {
-    icon: <FaCloud />,
-    title: "Cloud Services",
-    description:
-      "Providing scalable cloud solutions for your business needs, including deployment and management.",
+    icon: <FaLaptopCode />,
+    title: "Backend Basics",
+    description: "Creating foundational server-side functionality using Node.js and Express for simple APIs.",
   },
 ];
 
-const skills = [
-  "JavaScript",
-  "React",
-  "Redux",
-  "Node.js",
-  "CSS",
-  "HTML",
-  "Java",
-  "C++",
-];
+const skills = ["JavaScript", "React", "Redux", "Node.js", "CSS", "HTML", "Git"];
 
 const experience = [
-  "5+ years in web development",
-  "3+ years in mobile app development",
-  "Experience with cloud deployments",
-  "Contributed to open-source projects",
+  "Frontend web development with a focus on React",
+  "Working knowledge of RESTful API integration",
+  "Contributions to small team projects and personal projects",
 ];
 
-const tools = [
-  "VSCode",
-  "Git",
-  "Webpack",
-  "Docker",
-  "AWS",
-  "Heroku",
-  "Firebase",
-];
+const tools = ["VSCode", "Git", "Webpack", "Firebase"];
 
 const Summary = () => {
   const { ref: introRef, inView: introInView } = useInView({
@@ -114,7 +82,6 @@ const Summary = () => {
         animate={{ opacity: introInView ? 1 : 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         className="w-full max-w-6xl">
-        {/* Introduction Section */}
         <div className="mb-10">
           <motion.div
             initial={{ opacity: 0 }}
@@ -123,20 +90,14 @@ const Summary = () => {
             className="w-full lg:pr-[200px] text-start">
             <h1 className="text-4xl font-bold text-blue-500 mb-4">About Me</h1>
             <p className="text-lg text-gray-400">
-              I am a passionate software developer with a love for creating
-              engaging and user-friendly web applications. My journey into
-              software development began at the age of 20 with a strong
-              foundation in frontend technologies like React and Redux, allowing
-              me to craft interactive and responsive user interfaces. I also
-              excel in backend development, utilizing frameworks and libraries
-              like Spring Boot and NodeJS to build robust and scalable
-              applications. Explore my projects below to see how I bring ideas
+              I’m a frontend developer with a passion for crafting visually appealing and user-focused web applications.
+              Starting with React, I’ve built a strong foundation in frontend technologies, while also exploring backend
+              essentials like Node.js for basic API functionality. Check out my projects below to see how I bring ideas
               to life through code.
             </p>
           </motion.div>
         </div>
 
-        {/* Overall Skills Section */}
         <div className="flex flex-col items-center">
           {sections.map((section, index) => (
             <motion.div
@@ -150,16 +111,13 @@ const Summary = () => {
                 delay: index * 0.6,
               }}
               className="w-full mb-10 flex flex-col items-start">
-              <h2
-                className={`text-3xl font-bold ${section.color} mb-4 flex items-center`}>
+              <h2 className={`text-3xl font-bold ${section.color} mb-4 flex items-center`}>
                 {section.icon && section.icon}
                 {section.title}
               </h2>
               <ul className="flex flex-wrap space-x-4 text-gray-400">
                 {section.items.map((item, itemIndex) => (
-                  <li
-                    key={itemIndex}
-                    className="text-lg hover:text-white duration-200">
+                  <li key={itemIndex} className="text-lg hover:text-white duration-200">
                     {item}
                   </li>
                 ))}
@@ -168,17 +126,14 @@ const Summary = () => {
           ))}
         </div>
 
-        {/* Services Section */}
         <motion.div
           ref={servicesRef}
           initial={{ opacity: 0 }}
           animate={{ opacity: servicesInView ? 1 : 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="w-full mb-10">
-          <h1 className="text-4xl font-bold text-start mb-10 text-blue-500">
-            My Services
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h1 className="text-4xl font-bold text-start mb-10 text-blue-500">My Services</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -192,13 +147,9 @@ const Summary = () => {
                 whileHover={{
                   boxShadow: "0 4px 8px rgb(255, 255, 255)",
                 }}>
-                <div className="text-4xl mb-4 text-yellow-500">
-                  {service.icon}
-                </div>
+                <div className="text-4xl mb-4 text-yellow-500">{service.icon}</div>
                 <h2 className="text-2xl font-semibold mb-2">{service.title}</h2>
-                <p className="text-center text-gray-400">
-                  {service.description}
-                </p>
+                <p className="text-center text-gray-400">{service.description}</p>
               </motion.div>
             ))}
           </div>

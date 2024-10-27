@@ -11,7 +11,7 @@ const TypeAnimations = () => (
       <div className="flex text-white sm:text-2xl md:text-3xl text-xl pt-4 text-center">
         <span className="opacity-50">I'm a</span>
         <TypeAnimation
-          sequence={["Developer", 1500, "Learner", 1500, "Night Owl", 1500]}
+          sequence={["Developer", 1500, "Designer", 1500, "Learner", 1500, "Collaborator", 1500]}
           wrapper="span"
           speed={50}
           style={{
@@ -29,10 +29,7 @@ const TypeAnimations = () => (
             size={32}
           />
         </a>
-        <a
-          href="https://www.linkedin.com/in/metin-isakhanli-217374266"
-          target="_blank"
-          rel="noreferrer">
+        <a href="https://www.linkedin.com/in/metin-isakhanli-217374266" target="_blank" rel="noreferrer">
           <FaLinkedinIn
             className="p-1 cursor-pointer hover:bg-blue-600 ease-in-out duration-300 rounded-sm"
             size={32}
