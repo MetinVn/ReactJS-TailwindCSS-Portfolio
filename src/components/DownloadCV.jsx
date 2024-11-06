@@ -1,11 +1,10 @@
-import pdf from "../images/Metin-İsahanli.pdf";
+import pdf from "../images/Metin.pdf";
 
 const DownloadCV = () => (
   <div className="mt-6">
     <h3 className="text-lg font-bold mb-2">Download CV</h3>
     <p className="mb-4">
-      If you're interested in learning more about my qualifications and
-      experience, feel free to download my CV below:
+      If you're interested in learning more about my qualifications and experience, feel free to download my CV below:
     </p>
     <div className="flex justify-between items-center">
       <a
